@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 5px;
+}
+
+img {
+  width: 100%;
+}
+
+.action_buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+
+.view_app {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.view_app:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.view_code:hover {
+  background-color: #f3f4f6;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.bg_img_1 {
+  position: absolute;
+  left: -75px;
+  width: 250px;
+  opacity: 0.1;
+}
+
+header {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70vh;
+  z-index: -1;
+  background-color: #eff6ff;
+}
+
+header .logo {
+  width: 40px;
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  margin: 0 auto;
+}
+
+section .section_img {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  position: relative;
+}
+
+section .section_img .image {
+  border-radius: 5px;
+  box-shadow: 0px 20px 50px #d1d5db;
+}
+
+section .section_img .bg_img_2 {
+  position: absolute;
+  width: 250px;
+  bottom: 150px;
+  right: -175px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+section .section_img .bg_img_3 {
+  position: absolute;
+  width: 300px;
+  bottom: -100px;
+  left: -150px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+section h1 {
+  width: 100%;
+  max-width: 600px;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 auto 10px;
+  padding: 0 10px;
+  letter-spacing: 2px;
+  color: #3b82f6;
+}
+
+section p {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 10px;
+  line-height: 25px;
+  color: #ecb200;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .btn {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
